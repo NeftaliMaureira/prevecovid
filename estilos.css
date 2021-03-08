@@ -2,8 +2,98 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.banner{
+    background-color: rgb(62, 115, 228);
+    color:white;
+    padding: 2em;
+
+}
 
 
+.head {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
 
+.head h1{
+    font-size: 100px;
+}
+
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu ul a{
+    text-decoration: none;
+    color: white;
+    padding:0.5em;
+}
+
+
+.pie{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    align-content: space-between;
+}
+
+.pie>div{
+    padding: 0.5em;
+    min-width:30%;
+    text-align: justify;
+    align-self: stretch;
+    padding-left: 5%;
+}
+
+.pie>div h2{
+    padding-bottom: 0.5em;
+}
+
+.pie>div img {
+    width:15px; 
+    height:15px;
+}
+
+.pie div a{
+    color:rgb(231, 231, 227);
+    padding-top: 1em;
+
+}
+
+.pie div .contacto{
+    text-decoration: solid black;
+    color:white;
+}
+
+.pie div .redes-sociales{
+    text-decoration: none;
+    color:white;
+    padding-top: 2em;
+    padding-left: 0.5em;
+}
+
+@media (min-with: 600px){
+    .head {
+        flex-direction: row;
+    }
+
+    .menu ul{
+        flex-direction: row;
+    }
+
+    .pie{
+        flex-direction: row;
+    }
 }
